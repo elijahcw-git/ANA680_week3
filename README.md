@@ -1,30 +1,36 @@
-# Breast Cancer Prediction using Naive Bayes
+# UCI Wine Quality Prediction using Random Forests
 
 ## Overview
 
-This project is developed by Elijah C Walker for the ANA680 Machine Learning Model Deployment course at National University. It utilizes a Naive Bayes classifier to predict the malignancy of breast tumors with an accuracy of 93.7%. The classifier makes predictions based on four key features that exhibit the highest correlation with the tumor class.
+This project is developed to predict wine quality in the UCI Wine Quality dataset using a Random Forest classifier. The objective is to achieve a model accuracy of 62% by selecting specific variables from the dataset that are most relevant for the prediction.
 
 ## Features Used for Prediction
 
-The model uses the following features from the Breast Cancer Wisconsin (Original) Dataset:
+The model uses the following features from the UCI Wine Quality dataset:
 
--   Clump Thickness (`clump_thickness`)
--   Uniformity of Cell Size (`uniform_cell_size`)
--   Uniformity of Cell Shape (`uniform_cell_shape`)
--   Bland Chromatin (`bland_chromatin`)
+- Alcohol (`alcohol`)
+- Density (`density`)
+- Chlorides (`chlorides`)
+- Volatile Acidity (`volatile acidity`)
+- Total Sulfur Dioxide (`total sulfur dioxide`)
 
 ## Tools and Libraries
 
-The model was developed using the following tools and libraries:
+The model is developed using Python and makes use of the following libraries:
 
--   Google Colab: For writing and executing Python in an interactive environment.
--   Pickle: To serialize the model object for later use.
--   NumPy: For efficient numerical computations.
--   scikit-learn (`sklearn`): For implementing the Naive Bayes algorithm.
--   pandas: For data manipulation and analysis.
+- scikit-learn (`sklearn`): For implementing the Random Forest algorithm.
+- pandas: For data manipulation and analysis.
 
 ## Model Training
 
-## Model Training
+The Random Forest model is trained on the UCI Wine Quality dataset using `scikit-learn`. The dataset is processed and divided into training and test sets. The selected features are carefully chosen to ensure that the most relevant predictors are used for the model.
 
-The Naive Bayes model was trained on the Breast Cancer Wisconsin (Original) Dataset using `scikit-learn`. The dataset was processed and split into training and test sets. The features selected for the model were determined by their correlation with the class label, ensuring the most relevant predictors were used.
+## Model Evaluation
+
+The performance of the model is assessed based on its accuracy in predicting wine quality. The target is to achieve a model accuracy of 62%.
+
+
+
+---
+
+This README provides an overview of the UCI Wine Quality prediction project using Random Forests. For more details and code implementation, refer to the associated Python notebook.
